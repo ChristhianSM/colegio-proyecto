@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../img/fondo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 900px;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.486), hsla(308, 45%, 52%, 0.603)), url("../img/imagen-8.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 54%, 33%, 0.609), hsla(312, 3%, 28%, 0)), url("../img/imagen-8.jpg") /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header .menuNavegacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+header .menuNavegacion .logo img{
+    width: 90px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+header .menuNavegacion ul li{
+    display: inline-block;
+    padding-right: 15px;
+    margin: 10px;
+}
+
+header .menuNavegacion ul li a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: black ;
+    letter-spacing: 2px;
+}
+
+header .menuNavegacion ul li:hover{
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s ease-out all;
+}
+
+header .menuNavegacion ul li:nth-child(5){
+    padding: 10px;
+    background-color: #0b2a9a;
+    color: white;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+header .menuNavegacion ul li:nth-child(5):hover{
+    background-color: #04175d;
+}
+
+header .menuNavegacion ul li:nth-child(5) a{
+    color: white;
+}
+
+header .menuNavegacion .menuHamgurgesa {
+    display: none;
+}
+
+header .texto {
+    position: absolute;
+    top: 30%;
+    left: 10vw;
+    width: 30%;
+}
+
+header .texto h1{
+    color: white;
+    font-size: 3rem;
+}
+
+/* Nosotros */
+#beneficios{
+    width: 80%;
+    margin: auto;
+}
+
+#beneficios h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+#beneficios .contenedorCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedorCards .card {
+    width: 30%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contenedorCards .card span{
+    font-size: 4rem;
+    color: #0b2a9a;
+}
+
+.contenedorCards .card .subtitulo{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Admision */
+#admision .contenedor{
+    padding-top:  0px;
+}
+
+#admision .contenedor-admision{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor-admision .titulo {
+    width: 100%;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #0b2a9a;
+}
+
+.contenedor-admision .parrafo {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #962e41f2;
+    font-weight: 600;
+}
+
+.contenedor-admision .formulario{
+    width: 100%;
+}
+
+.contenedor-admision .formulario .formularioAdmision{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contenedor-admision input {
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+    outline: none;
+} 
+
+.contenedor-admision select {
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 6px;
+    border: 2px solid rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+    outline: none;
+}
+
+.contenedor-admision .terminos{
+    width: 100%;
+}
+ 
+.contenedor-admision .terminos input{
+    width: 2%;
+}
+
+.contenedor-admision .terminos label {
+    font-weight: 700;
+}
+
+.contenedor-admision .botonEnviar {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor-admision .botonEnviar input{
+    text-align: center;
+    width: 10%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.contenedor-admision .botonEnviar input:hover{
+    background-color: #0b2a9a;
+    color: white;
+}
+
+/* Footer */
+footer {
+    /* background-color: #3a3838b8; */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.486), hsla(308, 45%, 52%, 0.603)), url("../img/imagen-5.jpeg");
+    background: linear-gradient(to right, #09191df0, #171111de), url("../img/imagen-5.jpeg");
+    /* background-image: url("../img/imagen-portada.jpeg"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+#piePagina .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 90%;
+}
+
+#piePagina .frame .titulo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    color: white;
+    /* letter-spacing: 10px; */
+}
+
+#piePagina .frame {
+    width: 33%;
+}
+    
+#piePagina iframe{
+    width: 100%;
+    height: 30vh;
+    border-radius: 5px;
+}
+
+#piePagina .colegio {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#piePagina .colegio .titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    color: white;
+}
+
+#piePagina .colegio a {
+    text-decoration: none;
+    margin-bottom: 25px;
+    color: white;
+}
+
+#piePagina .colegio a:hover {
+    text-decoration: underline;
+    color: #0b2a9a;
+}
+
+#piePagina .redesSociales {
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#piePagina .redesSociales .titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    color: white;
+}
+
+.redesSociales a {
+    border: 1px solid #0b2a9a;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+}
+
+.redesSociales a i {
+    font-size: 2.7rem;
+    color: #0b2a9a;
+}
+
+#piePagina .imagenFinal {
+    width: 33%;
+}
+
+#piePagina .imagenFinal img{
+    width: 100%;
+}
+

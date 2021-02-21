@@ -1,0 +1,334 @@
+:root {
+    --colorTextos : #49454567;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../img/fondo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    width: 100%;
+}
+
+header .menuNavegacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+header .menuNavegacion .logo img{
+    width: 90px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+header .menuNavegacion ul li{
+    display: inline-block;
+    padding-right: 15px;
+    margin: 10px;
+}
+
+header .menuNavegacion ul li a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: black ;
+    letter-spacing: 2px;
+}
+
+header .menuNavegacion ul li:hover{
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header .menuNavegacion ul li:nth-child(5){
+    padding: 10px;
+    background-color: #0b2a9a;
+    color: white;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+header .menuNavegacion ul li:nth-child(5):hover{
+    background-color: #04175d;
+}
+
+header .menuNavegacion ul li:nth-child(5) a{
+    color: white;
+}
+
+header .texto {
+    position: absolute;
+    top: 30%;
+    left: 10vw;
+    width: 30%;
+}
+
+header .texto h1{
+    color: white;
+    font-size: 3rem;
+}
+
+/* Main  */
+
+main img {
+    width: 100%;
+    height: 75vh;
+    object-position: center;
+    /* object-fit: cover; */
+}
+
+main .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+}
+
+main .contenedor .frame {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: center;
+}
+
+main .contenedor .frame .titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+}
+
+main .contenedor .frame iframe {
+    width: 100%;
+    height: 50vh;
+    border-radius: 5px;
+}
+
+main .contenedor .contacto {
+    padding-top: 10px;
+    width: 35%;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: none;
+    -webkit-box-shadow: 7px 9px 29px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 9px 29px -5px rgba(0,0,0,0.75);
+    box-shadow: 7px 9px 29px -5px rgba(0,0,0,0.75);
+}
+
+main .contenedor .contacto .titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+main .contenedor .contacto .campo {
+    width: 80%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+input, textarea {
+    background: none;
+    color: #c6c6c6;
+    font-size: 1rem;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus , textarea:focus {
+    outline: none;
+    color: rgb(94, 93, 93);
+}
+
+input:focus~label, input:valid~label , textarea:focus~label, textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    left: 0;
+    font-size: 1rem;
+    color: #2196f3;
+}
+
+label {
+    color: var(--colorTextos);
+    font-size: 1rem;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    transition: 0.4s ease all;
+    pointer-events: none;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+input:focus~.barra::before, textarea:focus~.barra::before{
+    width: 100%;
+}
+
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, blue, blue);
+    transition: 0.4s ease all;
+    left: 0%;
+}
+
+.botonContacto{
+    margin-bottom: 15px;
+    width: 30%;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.botonContacto:hover{
+    background-color: #0b2a9a;
+    color: white;
+}
+
+/* Footer */
+footer {
+    /* background-color: #3a3838b8; */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.486), hsla(308, 45%, 52%, 0.603)), url("../img/imagen-5.jpeg");
+    background: linear-gradient(to right, #09191df0, #171111de), url("../img/imagen-5.jpeg");
+    /* background-image: url("../img/imagen-portada.jpeg"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+#piePagina .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 90%;
+}
+
+#piePagina .frame .titulo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    color: white;
+    /* letter-spacing: 10px; */
+}
+
+#piePagina .frame {
+    width: 33%;
+}
+    
+#piePagina iframe{
+    width: 100%;
+    height: 30vh;
+    border-radius: 5px;
+}
+
+#piePagina .colegio {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#piePagina .colegio .titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    color: white;
+}
+
+#piePagina .colegio a {
+    text-decoration: none;
+    margin-bottom: 25px;
+    color: white;
+}
+
+#piePagina .colegio a:hover {
+    text-decoration: underline;
+    color: #0b2a9a;
+}
+
+#piePagina .redesSociales {
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#piePagina .redesSociales .titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    color: white;
+}
+
+.redesSociales a {
+    border: 1px solid #0b2a9a;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+}
+
+.redesSociales a i {
+    font-size: 2.7rem;
+    color: #0b2a9a;
+}
+
+#piePagina .imagenFinal {
+    width: 33%;
+}
+
+#piePagina .imagenFinal img{
+    width: 100%;
+}

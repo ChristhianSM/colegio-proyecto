@@ -1,0 +1,180 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Colegio Proyecto</title>
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Estilos css -->
+    <link rel="stylesheet" href="./styles/stylesIndex.css">
+
+    <!-- Estilos por defecto -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <header>
+        <nav class="menuNavegacion">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo" id="logo">
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="formacion_academica.html">Formacion Academica</a>
+                </li>
+                <li>
+                    <a href="contactos.html">Contactenos</a>
+                </li>
+                <li>
+                    <a href="admision.html">Admision</a>
+                </li>
+            </ul>
+            <div class="menuHamburguesa">
+                <span class="material-icons">
+                    menu
+                </span>
+            </div>
+        </nav>
+
+        <div class="texto">
+            <h1>El mundo cambia, la educación también </h1>
+        </div>
+        <!-- <div  class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div> -->
+    </header>
+    <main>
+        <!-- Seccion Nosotros -->
+        <section id="beneficios">
+            <div class="contenedor">
+              <h2>BENEFICIOS</h2>
+              <div class="contenedorCards">
+                  <div class="card">
+                      <span class="material-icons">
+                      book
+                      </span>
+                      <h3 class="subtitulo">Docentes especializados</h3>
+                      <p class="parrafo"> Nuestros docentes cuentan con una amplia experiencia profesional y académica</p>
+                </div>
+                <div class="card">
+                    <span class="material-icons">
+                        accessibility_new
+                    </span>
+                    <h3 class="subtitulo">Clases online</h3>
+                      <p class="parrafo"> Clases en vivo, para interactuar profesor y alumno</p>
+                </div>
+                <div class="card">
+                    <span class="material-icons">
+                        description
+                    </span>
+                    <h3 class="subtitulo">Material Digital</h3>
+                      <p class="parrafo"> Banco de preguntas, separatas teóricas y prácticas. Prácticas por curso.</p>
+                </div>
+                <div class="card">
+                    <span class="material-icons">
+                        work
+                    </span>
+                    <h3 class="subtitulo">Orientacion Psicologica</h3>
+                    <p class="parrafo"> Brindamos al alumno orientación psicológica y seguimiento constante.</p>
+                </div>
+                <div class="card">
+                    <span class="material-icons">
+                        missed_video_call
+                    </span>
+                    <h3 class="subtitulo">Constante reforzamiento</h3>
+                    <ul>
+                        <li>Simulacros semanales</li>
+                        <li>Seminarios semanales</li>
+                        <li>Reforzamientos gratuitos</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <span class="material-icons">
+                        laptop_chromebook
+                    </span>
+                    <h3 class="subtitulo">Soporte</h3>
+                    <p class="parrafo"> Nuestro equipo de soporte técnico te ayudará de forma permanente. Además, asesoría y seguimiento académico.</p>
+                </div>
+              </div>
+            </div>
+        </section>
+        
+        <!-- Seccion contactos -->
+        <section id="admision">
+            <div class="contenedor">
+                <div class="contenedor-admision">
+                    <h2 class="titulo">Admision 2021 </h2>
+                    <p class="parrafo">Dejanos tus datos y contactaremos contigo</p>
+                    <div class="formulario">
+                        <form action="" class="formularioAdmision">
+                            <input type="text" placeholder="Nombre">
+                            <input type="text" placeholder="Apellidos">
+                            <select name="" id="">
+                                <option value="dni">DNI</option>
+                                <option value="carnet">Carnet de extranjeria</option>
+                                <option value="pasaporte">Pasaporte</option>
+                            </select>
+                            <input type="text" placeholder="Numero">
+                            <input type="email" placeholder="Correo electronico">
+                            <input type="text" placeholder="Telefono">
+                            <select name="" id="" class="grado">
+                                <option value="">Grado</option>
+                                <option value="primerGrado">1° Grado de Primaria</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">Provincia</option>
+                                <option value="piura">Piura</option>
+                                <option value="lima">Lima</option>
+                            </select>
+                            <div class="terminos">
+                                <input type="checkbox" name="terminos" id="">
+                                <label for="terminos"><a href=""> Acepto los terminos y condiciones</a></label>
+                            </div>
+                            <div class="botonEnviar">
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </section>
+    </main>
+    
+    <footer id="piePagina">
+        <div class="contenedor">
+            <div class="frame">
+                <p class="titulo">Ubicanos</p>
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Les%20Rambles,%201%20Barcelona,%20Spain+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+            <div class="colegio">
+                <p class="titulo">Colegio Proyecto</p>
+                <a href="">Inicio</a>
+                <a href="">Nosotros</a>
+                <a href="">Formacion Academica</a>
+                <a href="">Contactanos</a>
+            </div>
+            <div class="redesSociales">
+                <p class="titulo">Redes sociales</p>
+                <a href=""> <i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-whatsapp'></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-youtube' ></i></a>
+            </div>
+    </footer>
+        <div>
+            <p>copyright</p>
+        </div>
+    </div>
+</body>
+</html>

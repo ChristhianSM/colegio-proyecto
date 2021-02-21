@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../img/fondo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    width: 100%;
+
+}
+
+header .menuNavegacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+header .menuNavegacion .logo img{
+    width: 90px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+header .menuNavegacion ul li{
+    display: inline-block;
+    padding-right: 15px;
+    margin: 10px;
+}
+
+header .menuNavegacion ul li a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: black ;
+    letter-spacing: 2px;
+}
+
+header .menuNavegacion ul li:hover{
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header .menuNavegacion ul li:nth-child(5){
+    padding: 10px;
+    background-color: #0b2a9a;
+    color: white;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+header .menuNavegacion ul li:nth-child(5):hover{
+    background-color: #04175d;
+}
+
+header .menuNavegacion ul li:nth-child(5) a{
+    color: white;
+}
+
+header .texto {
+    position: absolute;
+    top: 30%;
+    left: 10vw;
+    width: 30%;
+}
+
+header .texto h1{
+    color: white;
+    font-size: 3rem;
+}
+
+/* Main  */
+main .imagenInicial img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+/* Nosotros */
+#nosotros .contenedor {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor .quienesSomos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.quienesSomos .textos{
+    width: 45%;
+    margin: 20px 20px;
+}
+
+.textos .titulo{
+    margin-bottom:15px ;
+}
+
+.textos .parrafo{
+    text-align: justify;
+}
+
+.quienesSomos .imagen {
+    width: 45%;
+    padding: 15px 5px;
+}
+
+.quienesSomos .imagen img {
+    width: 100%;
+}
+
+.mision {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.mision .imagen {
+    width: 45%;
+}
+
+.mision .imagen img {
+    width: 100%;
+    padding: 15px 5px;
+}
+
+.mision .textos{
+    width: 45%;
+    margin: 20px 20px;
+}
+
+.vision {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.vision .imagen {
+    width: 45%;
+}
+
+.vision .imagen img {
+    width: 100%;
+    padding: 15px 5px;
+}
+
+.vision .textos{
+    width: 45%;
+    margin: 20px 20px;
+}
+
+.historia {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid;
+    background-color: #f2f2f2 ;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.historia .imagen {
+    width: 45%;
+}
+
+.historia .imagen img {
+    width: 100%;
+    padding: 15px 5px;
+}
+
+.historia .textos{
+    width: 45%;
+    margin: 20px 20px;
+}
+
+/* Equipo */
+#equipo {
+    text-align: center;
+}
+
+#equipo .contenedor{
+    width: 80%;
+}
+
+#equipo .titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#equipo .barra {
+    width: 100%;
+    height: 3px;
+    background-color: #09191df0;
+}
+
+#equipo .contenedor-equipo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contenedor-equipo .card {
+    width: 23%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.contenedor-equipo .card:hover {
+    opacity: 0.6;
+}
+
+.contenedor-equipo .card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+/* Plataforma */
+.plataforma .contenedor {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contenedor .titulo {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor .parrafo {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor .plataforma{
+    width: 60%;
+}
+
+.contenedor .plataforma .card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contenedor .plataforma .card img {
+    width: 45%;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.contenedor .textoPlataforma{
+    width: 35%;
+    text-align: center;
+}
+
+.textoPlataforma h2 {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.textoPlataforma p {
+    margin-bottom: 3rem;
+}
+
+.textoPlataforma a {
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1.4rem;
+    background-color: #0b2a9a;
+    color: white;
+}
+
+
+/* Footer */
+footer {
+    /* background-color: #3a3838b8; */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.486), hsla(308, 45%, 52%, 0.603)), url("../img/imagen-5.jpeg");
+    background: linear-gradient(to right, #09191df0, #171111de), url("../img/imagen-5.jpeg");
+    /* background-image: url("../img/imagen-portada.jpeg"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+#piePagina .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 90%;
+}
+
+#piePagina .frame .titulo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    color: white;
+    /* letter-spacing: 10px; */
+}
+
+#piePagina .frame {
+    width: 33%;
+}
+    
+#piePagina iframe{
+    width: 100%;
+    height: 30vh;
+    border-radius: 5px;
+}
+
+#piePagina .colegio {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#piePagina .colegio .titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    color: white;
+}
+
+#piePagina .colegio a {
+    text-decoration: none;
+    margin-bottom: 25px;
+    color: white;
+}
+
+#piePagina .colegio a:hover {
+    text-decoration: underline;
+    color: #0b2a9a;
+}
+
+#piePagina .redesSociales {
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#piePagina .redesSociales .titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    /* font-weight: 200; */
+    color: white;
+}
+
+.redesSociales a {
+    border: 1px solid #0b2a9a;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+}
+
+.redesSociales a i {
+    font-size: 2.7rem;
+    color: #0b2a9a;
+}
+
+#piePagina .imagenFinal {
+    width: 33%;
+}
+
+#piePagina .imagenFinal img{
+    width: 100%;
+}
+
+

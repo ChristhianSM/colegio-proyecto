@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Estilos css -->
+    <link rel="stylesheet" href="./styles/stylesContacto.css">
+
+    <!-- Estilos por defecto -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menuNavegacion">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo" id="logo">
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Nosotros</a>
+                </li>
+                <li>
+                    <a href="formacion_academica.html">Formacion Academica</a>
+                </li>
+                <li>
+                    <a href="contactos.html">Contactenos</a>
+                </li>
+                <li>
+                    <a href="admision.html">Admision</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <img src="./img/computer-digital.jpg" alt="">
+            </div>
+        </section>
+        <div class="contenedor">
+                <div class="frame">
+                    <h2 class="titulo">Ubicanos</h2>
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Les%20Rambles,%201%20Barcelona,%20Spain+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+
+                <form action="" class="contacto">
+                    <h2 class="titulo">Contactanos</h2>
+                    <div class="campo">
+                        <input type="text" name="nombre" required><span class="barra"></span>
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="campo">
+                        <input type="text" name="apellidos" required><span class="barra"></span>
+                        <label for="apellidos">Apellidos</label>
+                    </div>
+                    <div class="campo">
+                        <input type="text" name="email" required><span class="barra" ></span>
+                        <label for="email">Correo electronico</label>
+                    </div>
+                    <div class="campo">
+                        <input type="text" name="telefono" required><span class="barra"></span>
+                        <label for="telefono">Telefono</label>
+                    </div>
+                    <div class="campo">
+                        <textarea name="comentario" id="" cols="30" rows="5" required></textarea><span class="barra"></span>
+                        <label for="comentario">Comentario</label>
+                    </div>
+                    <input type="submit" class="botonContacto" value="Contactar">
+                </form>
+        </div>
+    </main>
+
+    <footer id="piePagina">
+        <div class="contenedor">
+            <div class="frame">
+                <p class="titulo">Conocenos</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3D3hi3N46sQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="colegio">
+                <p class="titulo">Colegio Proyecto</p>
+                <a href="">Inicio</a>
+                <a href="">Nosotros</a>
+                <a href="">Formacion Academica</a>
+                <a href="">Contactanos</a>
+            </div>
+            <div class="redesSociales">
+                <p class="titulo">Redes sociales</p>
+                <a href=""> <i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-whatsapp'></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-youtube' ></i></a>
+            </div>
+    </footer>
+
+</body>
+</html>
